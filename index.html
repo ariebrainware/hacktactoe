@@ -10,15 +10,22 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
-    <link href="index.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/animate.css">
+    <link rel="stylesheet" href="src/css/index.css">
 </head>
 
 <body class="container">
-    <h1>Hack Tac Toe</h1>
-    <div id="main">
+    <h1 class="animated bounceInDown">Hack Tac Toe</h1>
+    <div id="main" class="animated flash">
         <div id="playerInfo">
-            <div id="x">X: <span id="player" data-side="1">Player</span></div>
-            <div id="o">O: <span id="player" data-side="0">Player</span></div>
+            <div id="x">X:
+                <span id="player" data-side="1">Player</span>
+                <p id="xWinVal">Win:</p>
+            </div>
+            <div id="o">O:
+                <span id="player" data-side="0">Player</span>
+                <p id="oWinVal">Win:</p>
+            </div>
         </div>
         <div id="playground">
             <div id="cellGroup">
@@ -37,7 +44,7 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="index.js"></script>
+    <script src="src/js/index.js"></script>
 </body>
 
 </html>
