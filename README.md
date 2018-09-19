@@ -1,5 +1,8 @@
 # Hack Tac Toe 
 
+![Content Game](https://img.shields.io/badge/content-game-green.svg)
+![Type Classic](https://img.shields.io/badge/type-classic-lightgrey.svg)
+
 Hack Tac Toe is a tictactoe game with minor improvement. 
 
 ## Feature 
