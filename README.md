@@ -5,6 +5,14 @@
 
 Hack Tac Toe is a tictactoe game with minor improvement. 
 
+## Interface
+
+![Full Interface](src/full-ui.png)
+
+Click here if you want to change opponent!! , you can play with your friend or just againts COM
+
+![Choose opponent](src/select-opponent.png)
+
 ## Feature 
 
 1. 3 x 3 main board
