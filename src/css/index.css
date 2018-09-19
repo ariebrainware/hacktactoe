@@ -84,3 +84,31 @@ h1{
     border-radius: 5px;
     border: 1px dotted gray;
 }
+
+.form-login{
+    max-width: 400px;
+}
+
+.custom-field{
+    color:green;
+    background-color: transparent;
+}
+
+.custom-field:focus{
+    color:  rgb(80,247,2);
+    background-color: transparent;
+}
+
+.hidden-component {
+    display: none;
+}
+
+.btn-login{
+    margin-left: 39%;
+    padding-top: 10px;
+}
+
+.btn-logout{
+    margin-left: 37%;
+    padding-top: 10px;
+}
