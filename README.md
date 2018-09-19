@@ -1,4 +1,4 @@
-# XOX 
+# Hack Tac Toe 
 
 XOX is a tictactoe game with minor improvement. I'm using React to develop this game
 
