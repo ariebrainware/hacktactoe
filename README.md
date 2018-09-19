@@ -16,7 +16,8 @@ Click here if you want to change opponent!! , you can play with your friend or j
 ## Feature 
 
 1. 3 x 3 main board
-2. Can against computer
+2. Player vs Player
+3. Player vs Computer
 
 ## Upcoming Feature
  
