@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Hack Tac Toe</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="src/hacktactoe.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+    <link href="index.css" type="text/css" rel="stylesheet">
+</head>
+
+<body class="container">
+    <h1>Hack Tac Toe</h1>
+    <div id="main">
+        <div id="playerInfo">
+            <div id="x">X: <span id="player" data-side="1">Player</span></div>
+            <div id="o">O: <span id="player" data-side="0">Player</span></div>
+        </div>
+        <div id="playground">
+            <div id="cellGroup">
+                <div class="cell 0" data-cell="0"></div>
+                <div class="cell 1" data-cell="1"></div>
+                <div class="cell 2" data-cell="2"></div>
+                <div class="cell 3" data-cell="3"></div>
+                <div class="cell 4" data-cell="4"></div>
+                <div class="cell 5" data-cell="5"></div>
+                <div class="cell 6" data-cell="6"></div>
+                <div class="cell 7" data-cell="7"></div>
+                <div class="cell 8" data-cell="8"></div>
+            </div>
+        </div>
+        <div id="result">Reset</div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
