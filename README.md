@@ -3,7 +3,7 @@
 ![Content Game](https://img.shields.io/badge/content-game-green.svg)
 ![Type Classic](https://img.shields.io/badge/type-classic-lightgrey.svg)
 
-Hack Tac Toe is a tictactoe game with minor improvement. 
+Hack Tac Toe is a tictactoe game with minor improvement. You can play with others players or just having fun with computer (fun if you win, LOL :v)
 
 ## Interface
 
@@ -18,10 +18,10 @@ Click here if you want to change opponent!! , you can play with your friend or j
 1. 3 x 3 main board
 2. Player vs Player
 3. Player vs Computer
+4. Scorebox
 
 ## Upcoming Feature
- 
-1. Scorebox
-2. Player name
-3. Logging System
 
+1. Player name
+2. Logging System
+3. Multiplayer Online
