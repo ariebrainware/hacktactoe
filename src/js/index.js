@@ -1,3 +1,5 @@
+const URL_API = "https://hacktactoe-api.herokuapp.com/players"
+
 $(document).ready(() => {
     let turn = 1;
     highlight();
@@ -8,7 +10,58 @@ $(document).ready(() => {
     ];
     let stop = false;
     let win;
+    let oWin = 0;
+    let xWin = 0;
     let clickCount = 0;
+
+    const storeLocalStorage = (key, data) => {
+        localStorage.setItem(key, data)
+    }
+
+    const clearLocalStorage = (key) => {
+        localStorage.removeItem(key)
+    }
+
+    const login = () => {
+        const creds = {
+            "username": $("#username").val(),
+            "password": $("#password").val()
+        }
+        console.log("username: " + creds.username)
+        console.log("password: " + creds.password)
+
+        axios.post(`${URL_API}/login`, creds)
+            .then(response => {
+                const playerData = {
+                    token: response.data.token
+                }
+                console.log(playerData)
+
+                storeLocalStorage('player', playerData.token)
+                swal("Login success!", "Have fun :) ", "success")
+                    .then(() => window.location = "../arena.html")
+            })
+            .catch(error => {
+                swal("Oops something wrong!", "Make sure your account registered. For dummy account, you can find in repo README ", "error");
+            })
+    }
+
+    const logout = () => {
+        clearLocalStorage('player')
+        swal("Logout success!", " Good bye ;) ", "success")
+        .then(()=>{
+            window.location = "../index.html"
+        })
+    }
+
+    $("#login").on("submit", event => {
+        event.preventDefault()
+        login()
+    })
+
+    $("#logout").on("click", event => {
+        logout()
+    })
 
     $("#playerInfo div span").click(function () {
         ($(this).text() === "Player") ? $(this).text("Computer"): $(this).text("Player");
@@ -58,7 +111,16 @@ $(document).ready(() => {
                 $(".cell").css({
                     "cursor": "not-allowed"
                 });
-                $("#result").hide().text(`${(win === 3) ? "X" : "O"} WIN. Click here to restart.`).show(500);
+
+                if ((win === 3)) {
+                    $("#result").text("X WIN. Click here to restart").show(500)
+                    xWin++
+                    $("#xWinVal").hide().text(`Win: ${xWin}`).show()
+                } else {
+                    $("#result").text("O WIN. Click here to restart").show(500)
+                    oWin++
+                    $("#oWinVal").hide().text(`Win: ${oWin}`).show()
+                }
                 return false;
             }
         }

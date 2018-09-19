@@ -8,9 +8,10 @@ h1{
     font-family: 'Share Tech Mono', monospace;
     color: green
 }
+
 #main {
     width: 300px;
-    height: 340px;
+    height: 400px;
     background-color: green;
     margin-left: auto;
     margin-right: auto;
@@ -43,7 +44,7 @@ h1{
 }
 
 #cellGroup div {
-    background-color: orange;
+    background-color: rgb(80,247,2);
     text-align: center;
     vertical-align: text-top;
     font-weight: bold;
@@ -82,4 +83,32 @@ h1{
 #result:hover {
     border-radius: 5px;
     border: 1px dotted gray;
+}
+
+.form-login{
+    max-width: 400px;
+}
+
+.custom-field{
+    color:green;
+    background-color: transparent;
+}
+
+.custom-field:focus{
+    color:  rgb(80,247,2);
+    background-color: transparent;
+}
+
+.hidden-component {
+    display: none;
+}
+
+.btn-login{
+    margin-left: 39%;
+    padding-top: 10px;
+}
+
+.btn-logout{
+    margin-left: 37%;
+    padding-top: 10px;
 }
