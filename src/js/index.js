@@ -8,6 +8,8 @@ $(document).ready(() => {
     ];
     let stop = false;
     let win;
+    let oWin = 0;
+    let xWin = 0;
     let clickCount = 0;
 
     $("#playerInfo div span").click(function () {
@@ -58,7 +60,16 @@ $(document).ready(() => {
                 $(".cell").css({
                     "cursor": "not-allowed"
                 });
-                $("#result").hide().text(`${(win === 3) ? "X" : "O"} WIN. Click here to restart.`).show(500);
+                
+                if((win === 3)){
+                    $("#result").text("X WIN. Click here to restart").show(500)
+                    xWin++
+                    $("#xWinVal").hide().text(`Win: ${xWin}`).show()
+                }else{
+                    $("#result").text("O WIN. Click here to restart").show(500)
+                    oWin++
+                    $("#oWinVal").hide().text(`Win: ${oWin}`).show()
+                }
                 return false;
             }
         }
