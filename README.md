@@ -24,6 +24,7 @@ I dont have signup section for now, but here's registered credetials that you ca
      "password":"tachonacho123"
  }
 ```
+*NB: When you try to login, it will take a few sec so just be patient. because i'm using free plan from heroku*
 
 <center>
 <h1>OR</h1>
